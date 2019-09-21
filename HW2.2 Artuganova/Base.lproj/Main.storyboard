@@ -103,12 +103,21 @@
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k6i-uC-ZmZ">
                                         <rect key="frame" x="-2" y="0.0" width="231" height="31"/>
+                                        <connections>
+                                            <action selector="changeRedValue" destination="BYZ-38-t0r" eventType="valueChanged" id="afk-Wi-9cs"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uu9-hS-lD1">
                                         <rect key="frame" x="-2" y="39" width="231" height="31"/>
+                                        <connections>
+                                            <action selector="changeGreenValue" destination="BYZ-38-t0r" eventType="valueChanged" id="hFi-3c-LzT"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xK0-Qd-z5n">
                                         <rect key="frame" x="-2" y="78" width="231" height="31"/>
+                                        <connections>
+                                            <action selector="changeBlueValue" destination="BYZ-38-t0r" eventType="valueChanged" id="XqL-Ah-dOe"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -129,6 +138,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="1AO-Wl-9OS" id="U2X-9m-Zbw"/>
+                        <outlet property="blueSlider" destination="xK0-Qd-z5n" id="ZXH-3E-zVd"/>
+                        <outlet property="blueTextField" destination="6to-u1-18l" id="uvN-np-FKs"/>
+                        <outlet property="blueValue" destination="P0H-x0-j1n" id="C5a-wf-IRG"/>
+                        <outlet property="greenLabel" destination="hz6-98-nur" id="0BA-GB-4vO"/>
+                        <outlet property="greenSlider" destination="Uu9-hS-lD1" id="sxc-bd-tc7"/>
+                        <outlet property="greenTextField" destination="1kh-LY-U20" id="djL-xQ-MeG"/>
+                        <outlet property="greenValue" destination="KSr-PF-u4W" id="M0D-ju-X9f"/>
+                        <outlet property="radLabel" destination="Qvz-jy-79P" id="Hbf-RU-0q1"/>
+                        <outlet property="redSlider" destination="k6i-uC-ZmZ" id="Zfl-8b-61x"/>
+                        <outlet property="redTextField" destination="Vf8-b1-RQz" id="5Oz-Ac-UDY"/>
+                        <outlet property="redValue" destination="QAB-te-WdP" id="SPP-Py-VqI"/>
+                        <outlet property="screenView" destination="AWI-Gl-c6T" id="Afl-H3-iaf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
